@@ -16,11 +16,11 @@ To test if your publisher key is set correctly, simply visit the "test.php" file
 
 ##TODO
 
-• Fully Implement Giphy API
-• Add Random GIF Button
-• Allow Previous / Next GIF Buttons
-• Change Backgrounf GIF as search query is typed (make search query show GIFs with corresponding tags).
-• Implement Better Short Link & Sharing System
+* Fully Implement Giphy API
+* Add Random GIF Button
+* Allow Previous / Next GIF Buttons
+* Change Backgrounf GIF as search query is typed (make search query show GIFs with corresponding tags).
+* Implement Better Short Link & Sharing System
 
 ##Support
 Having trouble with Google GIFs? Feel free to contact CDG Support by emailing hello@cdgtech.one and if you encounter any issues, please report them at the GitHub [issues tracker](https://github.com/cdgco/GooGifs/issues).
