@@ -1,0 +1,14 @@
+#Copyright 2016 CDG, Co. G.W.S.
+#Developed By CDG Labs in Oregon.
+#Powered By Giphy & Google.com
+
+# Required: Redirect All Requests To Google
+
+RewriteEngine On 
+Redirect 301 /search https://www.google.com/#q=
+
+# Optional: Turn On SSL
+
+#RewriteCond %{HTTP_HOST} ^YOUR-DOMAIN\.TLD [NC]
+#RewriteCond %{SERVER_PORT} 80 
+#RewriteRule ^(.*)$ https://YOUR-DOMAIN.TLD/$1 [R,L]
