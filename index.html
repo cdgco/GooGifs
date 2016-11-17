@@ -13,6 +13,7 @@ Powered By Giphy & Google.com
 	<title>CDG Labs</title>
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="mobile-web-app-capable" content="yes">
 	<meta content="" name="keywords">
 	
 	<!-- Google Web Fonts -->
@@ -50,25 +51,56 @@ Powered By Giphy & Google.com
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
 	<link href="css/style.css" rel='stylesheet' type='text/css'>
 	<link href="css/popup.css" rel="stylesheet" type="text/css">
-	<style>
+	<style>0{ border: 1px solid red; }
+           html { height: 100% }
+           body { min-height:540px;}     
+           body[orient="portrait"] { min-height:540px; }
+           body[orient="landscape"] { min-height:400px; }
 	   a {
 	       color: DodgerBlue;
 	   }
 	   #letterg {
-	       color: #4285F4
+	       color: #4285F4;
+               display:inline-block;
 	   }
 	   #lettero1 {
-	       color: #EA4335
+	       color: #EA4335;
+               display:inline-block;
 	   }
 	   #lettero2 {
-	       color: #FBBC05
+	       color: #FBBC05;
+               display:inline-block;
 	   }
 	   #letterl {
-	       color: #34A853
+	       color: #34A853;
+               display:inline-block;
 	   }
 	   #lettere {
-	       color: #EA4335
+	       color: #EA4335;
+               display:inline-block;
+               
 	   }
+           @media screen and (max-width: 600px) { 
+               #mobilehide { 
+                   visibility: hidden; 
+                   clear: both; 
+                   float: left; 
+                   margin: 10px auto 5px 20px; 
+                   width: 28%; 
+                   display: none; 
+            }}
+            .heading {
+                position: relative;
+                top: 30px;
+            }
+            #form1 {
+                position: relative;
+                top: 10px;
+            }
+            #footer {
+                position: relative;
+                top: -20px;
+            }
 	   .form-style-7 {
 	       max-width: 400px;
 	       margin: 50px auto;
@@ -161,9 +193,9 @@ Powered By Giphy & Google.com
 <body>
 	<div class="main">
 		<div class="container">
-			<div class="plans-head">
+			<div>
 				<div class="heading">
-					<h1><b style="font-family: 'Product Sans', Arial, sans-serif;">CDG Labs</b> <b style="color:silver;">┋</b>&nbsp;<em style="font-family: 'Product Sans', Arial, sans-serif;"><b id="letterg">G</b><b id="lettero1">o</b><b id="lettero2">o</b><b id="letterg">G</b><b id="letterl">i</b><b id="lettere">f</b></em></h1>
+					<h1><b id="mobilehide" style="font-family: 'Product Sans', Arial, sans-serif;">CDG Labs</b> <b style="color:silver;"id="mobilehide">┋&nbsp;</b><em style="font-family: 'Product Sans', Arial, sans-serif;"><b id="letterg">G</b><b id="lettero1">o</b><b id="lettero2">o</b><b id="letterg">G</b><b id="letterl">i</b><b id="lettere">f</b></em></h1>
 				</div>
 
 
@@ -188,7 +220,7 @@ Powered By Giphy & Google.com
 
 
 				<center>
-					<a href="http://api.giphy.com/">Giphy Integration Coming Soon!</a>
+					<a id="footer" href="http://api.giphy.com/">Giphy Integration Coming Soon!</a>
 				</center>
 
 
@@ -197,22 +229,18 @@ Powered By Giphy & Google.com
 				</div>
 
 
-				<center>
 					<br>
 
 
-					<table>
+					<table align="center" id="footer">
 						<tr>
 							<td style="white-space:nowrap;">
-								<center>
 									<div id="opener">
 										<a href="#1" id="1" name="1" onclick="return show();">How To Set Title Color</a> | <a href="#2" id="2" name="2" onclick="return show2();">How To Add GIF</a>
 									</div>
-								</center>
 
 
 								<div id="benefits" style="display:none;">
-									<center>
 										<div id="upbutton">
 											<a onclick="return hide();">(Close)</a>
 										</div>
@@ -224,19 +252,15 @@ Powered By Giphy & Google.com
 
 
 										<h4 style="font-size: 12px">The form accepts <u><a href="http://www.w3schools.com/cssref/css_colorsfull.asp">HEX Codes</a></u> (#FFFFFF), <u><a href="http://www.w3schools.com/cssref/css_colors.asp">RGB Codes</a></u> (255,255,255), <u><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Pickers</a></u>, and <u><a href="http://www.w3schools.com/cssref/css_colornames.asp">Color Names</a></u> (White).</h4>
-									</center>
 								</div>
 
 
 								<div id="benefits2" style="display:none;">
-									<center>
 										<div id="upbutton">
 											<a onclick="return hide2();">(Close)</a>
 										</div>
-									</center>
 
 
-									<center>
 										<div style="height:10px;font-size:1px;">
 											&nbsp;
 										</div>
@@ -244,7 +268,6 @@ Powered By Giphy & Google.com
 
 										<h4 style="font-size: 12px">Go to <a href="https://giphy.com">Giphy</a> and choose a GIF. Underneath selected GIF, click "Advanced" and copy the "Download Link".<br>
 										Paste the link in the "GIF / Image Link" form on this page.</h4>
-									</center>
 								</div>
 							</td>
 						</tr>
@@ -279,6 +302,20 @@ Powered By Giphy & Google.com
 					                                 }
 					                              });
 					                              });
+function toggleFullScreen() {
+  var doc = window.document;
+  var docEl = doc.documentElement;
+
+  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+    requestFullScreen.call(docEl);
+  }
+  else {
+    cancelFullScreen.call(doc);
+  }
+}
 					</script>
 				</center>
 			</div>

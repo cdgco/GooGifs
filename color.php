@@ -37,23 +37,29 @@ Powered By Giphy & Google.com
 
 	   #letterg {
 	      font-size: 90px;
-	      color: #4285F4
+	      color: #4285F4;
+              display: inline-block;
 	   }
 	   #lettero1 {
 	      font-size: 90px;
-	      color: #EA4335
+	      color: #EA4335;
+              display: inline-block;
 	   }
 	   #lettero2 {
 	      font-size: 90px;
-	      color: #FBBC05
+	      color: #FBBC05;
+              display: inline-block;
 	   }
 	   #letterl {
 	      font-size: 90px;
-	      color: #34A853
+	      color: #34A853;
+              display: inline-block;
 	   }
 	   #lettere {
 	      font-size: 90px;
-	      color: #EA4335
+	      color: #EA4335;
+              display: inline-block;
+              -webkit-transform: rotate(-23deg);
 	   }
 	</style>
 
@@ -62,6 +68,7 @@ Powered By Giphy & Google.com
 </head>
 
 <body class="hp vasq" id="gsr">
+    <center>
 	<div class="ctr-p" id="viewport">
 		<div class="jhp big big" id="searchform">
 			<div class="gb_T" id="gb">
@@ -170,5 +177,6 @@ Powered By Giphy & Google.com
 			</script>
 		</div>
 	</div>
+    </center>
 </body>
 </html>
