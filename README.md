@@ -6,13 +6,13 @@ Google Gifs is a simple custom Google page generator, Powered by Giphy, Google &
 
 To install Google GIFs on your own server or website, simply download and extract GooGifs from Github, or run the command "git clone https://github.com/cdgco/GooGifs.git" on your server's web directory.
 
-If you would like to allow short link & sharing options, simply sign up for an account on ShareThis.com and paste your publisher key in the file named "publisher-key.php".
+If you would like to allow short link & sharing options, simply sign up for an account at http://tools.sharethis.com/signin and paste your publisher key in the file named "publisher-key.php".
 
 To test if your publisher key is set correctly, simply visit the "test.php" file in your browser.
 
 ##Demo
 
-To view Google GIFs in action, visit the Google GIFs Demo.
+To view a live demo of Google GIFs, please visit https://test.cdgtech.one/git.
 
 ##Support
 
