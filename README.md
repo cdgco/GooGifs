@@ -28,7 +28,7 @@ Note: Publisher Keys are not allowed to be set when deployed to Heroku.
 * Allow Previous / Next GIF Buttons
 * Change Backgrounf GIF as search query is typed (make search query show GIFs with corresponding tags).
 * Implement Better Short Link & Sharing System
-* Add Mobile Support
+* Add Mobile Support (In-Progress)
 
 ##Support
 Having trouble with Google GIFs? Feel free to contact CDG Support by emailing hello@cdgtech.one and if you encounter any issues, please report them at the GitHub [issues tracker](https://github.com/cdgco/GooGifs/issues).
