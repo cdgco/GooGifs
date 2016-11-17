@@ -19,6 +19,8 @@ If you would like to allow short link & sharing options, simply sign up for an a
 
 To test if your publisher key is set correctly, simply visit the "test.php" file in your browser.
 
+Note: Publisher Keys are not allowed to be set when deployed to Heroku.
+
 ##TODO
 
 * Fully Implement Giphy API
