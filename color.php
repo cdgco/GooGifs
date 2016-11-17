@@ -1,3 +1,4 @@
+<?php include 'publisher-key.php'?>
 <!DOCTYPE html>
 <!-- 
 
@@ -16,7 +17,7 @@ Powered By Giphy & Google.com
 
         <!-- Share Button Scripts -->
         <script type="text/javascript">var switchTo5x=true;</script>
-	<script id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=PUBLISHER-ID-GOES-HERE" type="text/javascript"></script>
+	<script id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=<?php echo $pubkey; ?>" type="text/javascript"></script>
 	<script src="https://ss.sharethis.com/loader.js" type="text/javascript"></script>
 
         <!-- Combined File of Google Scripts -->
@@ -163,9 +164,9 @@ Powered By Giphy & Google.com
 
 			<!-- Optional Scripts For Share Buttons -->
 			<script type="text/javascript">
-			         stLight.options({publisher: "PUBLISHER-ID-GOES-HERE", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+			         stLight.options({publisher: "<?php echo $pubkey; ?>", doNotHash: false, doNotCopy: false, hashAddressBar: false});
 			</script> 
-			<script> var options={ "publisher": "PUBLISHER-ID-GOES-HERE", "position": "left", "ad": { "visible": false, "openDelay": 0, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "email"]}}; var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+			<script> var options={ "publisher": "<?php echo $pubkey; ?>", "position": "left", "ad": { "visible": false, "openDelay": 0, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "email"]}}; var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
 			</script>
 		</div>
 	</div>
