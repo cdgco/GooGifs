@@ -7,147 +7,69 @@ Developed By CDG Labs in Oregon.
 Powered By Giphy & Google.com
 
 -->
+
 <html>
 <head>
-	<!-- Linked CSS Stylesheets -->
-	<link href="css/google.css" rel='stylesheet' type='text/css'>
-
-        <!-- Font For Google Logo -->
+	<link href='https://www.google.com/images/branding/product/ico/googleg_lodp.ico' rel='shortcut icon' type='image/png'>
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
+        <link href='css/CDG-Search.css' rel='stylesheet' type='text/css'>
+        <link href='css/CDG-Footer.css' rel='stylesheet' type='text/css' >
 
-        <!-- Share Button Scripts -->
-        <script type="text/javascript">var switchTo5x=true;</script>
-	<script id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=<?php echo $pubkey; ?>" type="text/javascript"></script>
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script id="st_insights_js" src="https://ws.sharethis.com/button/buttons.js?publisher=%3C?php%20echo%20$pubkey;%20?%3E" type="text/javascript"></script>
 	<script src="https://ss.sharethis.com/loader.js" type="text/javascript"></script>
 
-        <!-- Combined File of Google Scripts -->
-        <script src="js/google.js" type="text/javascript"></script>
-
-        <!-- Title -->
-        <title>Google</title>
-
-        <!-- CSS Styling -->
-        <style type="text/css">
-	   body {
-	     background-image:url(<?php print_r($_GET['bg']) ?>); 
-	     background-repeat:no-repeat; 
-	     background-size:100% 100%;
-	   } 
-
-         /* White Google Logo Styling */
-
-	   #white { 
-	     font-size: 90px; 
-	     color: white
-	   } 
-	</style>
+	<title>Google</title>
 </head>
 
-<body class="hp vasq" id="gsr">
-	<div class="ctr-p" id="viewport">
-		<div class="jhp big big" id="searchform">
-			<div class="gb_T" id="gb">
-				<div id="gbw">
-					<div style="top:0;left:0;right:0;width:100%">
-					</div>
-				</div>
-			</div>
+<body>
+<div class="mainDiv">
+<div class="outer">
+<div class="middle">
+<div class="inner">
+	<p style="text-align:center; display:inline-block; font-family: 'Product Sans', Arial, sans-serif; font-size: 90px; color: white">Google</p>
 
+        <div style="height:20px;font-size:1px;">&nbsp;</div>
+	
+        <form action="/search" class="tsf" id="tsf" method="get" name="f" onsubmit="return q.value!=''" role="search" style="position:relative; top:-76px; overflow:visible">
+		<input name="sclient" type="hidden" value="psy-ab">
 
-			<div class="sfbg nojsv" style="margin-top:-15px">
-				<div class="sfbgg">
-				</div>
-			</div>
+		<div id="searchContainer">
+			<input id="field" name="q" maxlength="2048" autocomplete="off" title="Search" type="text" value="" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="both" spellcheck="false" autofocus>
+		</div>
+        <div style="height:5px;font-size:1px;">&nbsp;</div>
 
-
-			<form action="/search" class="tsf" id="tsf" method="get" name="f" onsubmit="return q.value!=''" role="search" style="overflow:visible">
-				<input name="sclient" type="hidden" value="psy-ab">
-
-				<div data-jibp="" data-jiis="uc" id="tophf">
-					<input name="safe" type="hidden" value="strict">
-                                        <input name="site" type="hidden" value="">
-                                        <input name="source" type="hidden" value="hp">
-				</div>
-
-
-				<div class="tsf-p">
-					<div class="sfibbbc">
-						<div class="sbtc" id="sbtc">
-							<div class="sbibtd">
-								<div class="nojsv sfopt" id="sfopt">
-									<div class="lsd">
-										<div data-jiis="uc" id="ss-bar" style="white-space:nowrap;z-index:98">
-										</div>
-									</div>
-								</div>
-
-
-								<div class="sfsbc">
-									<div class="nojsb">
-										<div class="ds" id="sbds">
-											<div class="lsbb kpbb" id="sblsbb">
-												<button class="lsb" name="btnG" type="submit" value="Search">
-                                                                                                        <span class="sbico"></span>
-                                                                                                </button>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="sbibod" id="sfdiv">
-									<div class="gstl_0 sbib_a" style="height: 38px;">
-										<div class="sbib_b" dir="ltr" id="sb_ifc0">
-											<div id="gs_lc0" style="position: relative;">
-												<input aria-autocomplete="both" aria-haspopup="false" aria-label="Search" autocomplete="off" class="gsfi" dir="ltr" id="lst-ib" maxlength="2048" name="q" role="combobox" spellcheck="false" style="border: none; padding: 0px; margin: 0px; height: auto; width: 100%; position: absolute; z-index: 6; left: 0px; outline: none;" title="Search" type="text" value="" autofocus>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br>
-					<br>
-
-
-					<div class="jsb" style="padding-top:18px">
-						<center>
-							<input aria-label="Google Search" name="btnK" type="submit" value="Google Search"> <input aria-label="I'm Feeling Lucky" id="gbqfbb" name="btnI" type="submit" value="I'm Feeling Lucky">
-						</center>
-					</div>
-				</div>
-				<input name="oq" type="hidden" value=""><input name="gs_l" type="hidden" value=""><input name="pbx" type="hidden" value="1">
-			</form>
+		<div style="padding-top:18px">
+			<input aria-label="Google Search" class="button default" name="btnK" type="submit" value="Google Search">
+			<input aria-label="I'm Feeling Lucky" class="button default" id="gbqfbb" name="btnI" type="submit" value="I'm Feeling Lucky">
 		</div>
 
+		<input name="oq" type="hidden" value="">
+		<input name="gs_l" type="hidden" value="">
+		<input name="pbx" type="hidden" value="1">
+	</form>
 
-		<div class="content" data-jiis="cc" id="main">
-			<span class="ctr-p" data-jiis="bp" id="body"></span>
+</div>
+	<div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>$.backstretch("<?php print_r($_GET['bg']) ?>");</script>
+		<span class="ctr-p" data-jiis="bp" id="body"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script></span> 
+		<script type="text/javascript">stLight.options({publisher: "<?php echo $pubkey; ?>", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> 
+		<script>var options={ "publisher": "<?php echo $pubkey; ?>", "position": "left", "ad": { "visible": false, "openDelay": 0, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "email"]}}; var st_hover_widget = new sharethis.widgets.hoverbuttons(options);</script>
+	    </div>
+        </div>
+    </div>
+</div>
 
-			<center>
-				<span class="ctr-p" data-jiis="bp" id="body"></span>
+	<div class="_hq _ih" id="fbar">
+		<div class="fbar">
+			<span id="fsr">
+				<a class="_Sh" href="https://github.com/cdgco/GooGifs">Fork On Github</a>
+				<a class="_Se" href="https://cdgco.github.io">CDG Labs</a></span> <span id="fsl"></span>
 
-                                <!-- Adjust Position Of Google Logo -->
-				<div id="lga" style="height:233px;margin-top:175px">
-					<span class="ctr-p" data-jiis="bp" id="body"></span>
-
-					<div class="white" id="whitesection">
-						<span class="ctr-p" data-jiis="bp" id="body"></span>
-
-						<h1 class="ctr-p" data-jiis="bp" id="body" style="font-family: 'Product Sans', Arial, sans-serif;"><span id="white">Google</span></h1>
-					</div>
-					<span class="ctr-p" data-jiis="bp" id="body">
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script></span>
-				</div>
-			</center>
-
-                        <!-- Optional Scripts For Share Buttons -->
-                        <script type="text/javascript">
-			stLight.options({publisher: "<?php echo $pubkey; ?>", doNotHash: false, doNotCopy: false, hashAddressBar: false});
-			</script> 
-			<script>
-			var options={ "publisher": "<?php echo $pubkey; ?>", "position": "left", "ad": { "visible": false, "openDelay": 0, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "email"]}}; var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
-			</script>
+			<p class="_Sh" style="float:left"><span id="fsl"></span></p>
+			<span id="fsl"><a class="_Sh" href="https://cdgtech.one" style="float:left">&copy; 2016 Complex Design Groups, Co.</a></span>
 		</div>
 	</div>
 </body>
