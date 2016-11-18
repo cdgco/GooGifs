@@ -23,7 +23,7 @@ Powered By Giphy & Google.com
 	<!-- Custom Scripts -->
 	<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
 	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<script src="js/CDG-Index.js" type="text/javascript"></script>
+        <script src="js/CDG-Index.js" type="text/javascript"></script>
 
 	<script type="application/x-javascript">
 	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
@@ -33,6 +33,9 @@ Powered By Giphy & Google.com
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
 	<link href="css/CDG-Style.css" rel='stylesheet' type='text/css'>
 
+<style>
+@media screen and (min-width: 0px) and (max-width: 600px) { #content { display: block; } /* show it on small screens */ }
+</style>
 </head>
 
 <body>
@@ -46,8 +49,8 @@ Powered By Giphy & Google.com
 				<div class="form-style-7">
 					<form id="form1" method="get" name="form1">
 						<ul>
-							<li><input id="whiteCheck" name="x" type="radio" value="w"> White Google Logo</li>
-    						        <li><input id="colorCheck" name="x" type="radio" value="c"> Colored Google Logo</li>
+							<li><input id="whiteCheck" name="x" type="radio" onclick="javascript:close1();" value="w"> White Google Logo</li>
+    						        <li><input id="colorCheck" name="x" onclick="javascript:close2();" type="radio" value="c"> Colored Google Logo</li>
 							<li><input id="customCheck" name="x" onclick="javascript:yesnoCheck();" type="radio" value="s"> Custom Title</li>
 							<li style="list-style: none; display: none" id="ifYes">
 									<ul>
@@ -55,49 +58,49 @@ Powered By Giphy & Google.com
 									</ul>
 								<br>
 							</li>
-							<li><input name="bg" placeholder="https://giphy.com/i" type="url"> <span>Gif / Image Link</span></li>
+							<li><input name="bg" placeholder="https://giphy.com/image.gif" type="url"> <span>Gif / Image Link</span></li>
 							<li><input type="submit" value="Submit">
 							</li>
 						</ul></form>
 					
 				</div>
 
-				<center><a style="text-align: center" id="footer" href="http://api.giphy.com/">Giphy Integration Coming Soon!</a></center>
-
+				<center><img src="http://test.cdgtech.one/git/img/giphy.gif" height="50px"></center>
+<br><br>
 				<div style="height:0px;font-size:1px;">&nbsp;</div>
 
 					<br>
 
-					<table align="center" id="footer">
+					<table style="margin:0 auto;" id="footer">
 						<tr>
 							<td style="white-space:nowrap;">
 									<div id="opener">
-										<a href="#1" id="1" name="1" onclick="return show();">How To Set Title Color</a> | <a href="#2" id="2" name="2" onclick="return show2();">How To Add GIF</a>
+										<center><a href="#1" id="1" name="1" onclick="click1();">How To Set Title Color</a> | <a href="#2" id="2" name="2" onclick="return click2();">How To Add GIF</a></center>
 									</div>
 
-								<div id="benefits" style="display:none;">
+								<div style="margin:0 auto; display:none" id="benefits" >
 										<div id="upbutton">
-											<a onclick="return hide();">(Close)</a>
+										<center	><a onclick="return hide();">(Close)</a></center>
 										</div>
 
 										<div style="height:10px;font-size:1px;">
 											&nbsp;
 										</div>
 
-										<h4 style="font-size: 12px">The form accepts <u><a href="http://www.w3schools.com/cssref/css_colorsfull.asp">HEX Codes</a></u> (#FFFFFF), <u><a href="http://www.w3schools.com/cssref/css_colors.asp">RGB Codes</a></u> (255,255,255), <u><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Pickers</a></u>, and <u><a href="http://www.w3schools.com/cssref/css_colornames.asp">Color Names</a></u> (White).</h4>
+										<center><h4 style="display: inline-block; min-width: 350px;font-size: 12px">The form accepts:<br id"content"> <u><a href="http://www.w3schools.com/cssref/css_colorsfull.asp">HEX Codes</a></u> (#FFFFFF), <br id"content"><u><a href="http://www.w3schools.com/cssref/!css_colors.asp">RGB Codes</a></u> (255,255,255), <br id"content"><u><a href="http://www.w3schools.com/tags/ref_colorpicker.asp">Color Pickers</a></u>, <br id"content">and <u><a href="http://www.w3schools.com/cssref/css_colornames.asp">Color Names</a></u> (White).</h4></center>
 								</div>
 
-								<div id="benefits2" style="display:none;">
-										<div id="upbutton">
+								<div id="benefits2" style="margin:0 auto;display:none;">
+									<center>	<div id="upbutton">
 											<a onclick="return hide2();">(Close)</a>
-										</div>
+										</div></center>
 
 										<div style="height:10px;font-size:1px;">
 											&nbsp;
 										</div>
 
-										<h4 style="font-size: 12px">Go to <a href="https://giphy.com">Giphy</a> and choose a GIF. Underneath selected GIF, click "Advanced" and copy the "Download Link".<br>
-										Paste the link in the "GIF / Image Link" form on this page.</h4>
+									<center>	<h4 style="display: inline-block; min-width: 350px; font-size: 12px">Go to <a href="https://giphy.com">Giphy</a> and choose a GIF.<br id"content"> Underneath GIF, click "Advanced" <br id"content">Copy the "Download Link".<br>
+										Paste the link in this page.</h4></center>
 								</div>
 							</td>
 						</tr>
@@ -106,5 +109,44 @@ Powered By Giphy & Google.com
 			</div>
 		</div>
 	</div>
+
+<script type="text/javascript">
+function click1() {
+	show();
+	hide2();
+}
+
+function click2() {
+	show2();
+	hide();
+}
+function show() {
+	if (document.getElementById('benefits').style.display == 'none') {
+		document.getElementById('benefits').style.display = 'inline-block';
+	}
+	return false;
+}
+
+function hide() {
+	if (document.getElementById('benefits').style.display == 'inline-block') {
+		document.getElementById('benefits').style.display = 'none';
+	}
+	return false;
+}
+
+function show2() {
+	if (document.getElementById('benefits2').style.display == 'none') {
+		document.getElementById('benefits2').style.display = 'inline-block';
+	}
+	return false;
+}
+
+function hide2() {
+	if (document.getElementById('benefits2').style.display == 'inline-block') {
+		document.getElementById('benefits2').style.display = 'none';
+	}
+	return false;
+}
+</script>
 </body>
 </html>

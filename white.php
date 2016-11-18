@@ -1,4 +1,4 @@
-<?php include 'publisher-key.php'?>
+<?php include 'config.php'?>
 <!DOCTYPE html>
 <!-- 
 

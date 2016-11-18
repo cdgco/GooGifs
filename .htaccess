@@ -12,3 +12,11 @@ Redirect 301 /search https://www.google.com/#q=
 #RewriteCond %{HTTP_HOST} ^YOUR-DOMAIN\.TLD [NC]
 #RewriteCond %{SERVER_PORT} 80 
 #RewriteRule ^(.*)$ https://YOUR-DOMAIN.TLD/$1 [R,L]
+
+#Error Pages
+
+ErrorDocument 404 /error-pages/404.php
+ErrorDocument 503 /error-pages/503.php
+
+#Turn on Maintenance Mode
+#DirectoryIndex /error-pages/maintenance.html

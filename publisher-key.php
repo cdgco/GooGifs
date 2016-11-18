@@ -1,1 +1,0 @@
-<?php $pubkey = 'NOT SET'; ?>
