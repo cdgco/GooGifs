@@ -23,7 +23,7 @@ Note: Publisher Keys are not allowed to be set when deployed to Heroku.
 
 ##TODO
 
-* Fully Implement Giphy API
+* Fully Implement Giphy API (In Progress)
 * Add Random GIF Button
 * Allow Previous / Next GIF Buttons
 * Change Backgrounf GIF as search query is typed (make search query show GIFs with corresponding tags).
