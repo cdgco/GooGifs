@@ -173,12 +173,12 @@
 		Your Support email is set as: <?php include 'config.php'; print_r($email) ?>
 		<br>
 		<br><hr style="color:black"><br><br>
-		To change these values, <a href="install">re-install the configuration</a>. You may now go to the <a href="/">Home Page</a>.
+		To change these values, <a href="install">re-install the configuration</a>. You may now go to the <a href=".">Home Page</a>.
 <br><br><br>
 
 <?php $filename = 'install/install.php';
 
-if (file_exists($filename)) { echo '<p><b style="font-size:20px; color:red">WARNING: The "Install" Directory Still Exists, It is recommended that you delete this if possible. </b><a style="font-size:20px;" href="test.php">Re-Check</a></p>';} 
+if (file_exists($filename)) { echo '<p><b style="font-size:20px; color:red">WARNING: The "Install" Directory Still Exists, please <a style="font-size:20px;" href="rminstall.php">Click Here</a> to remove it.</b></p>';} 
 else { echo '<p><b style="font-size:15px; color:green">Install Directory has been successfully removed!</b></p>';}
 ?>
 	    <script>
