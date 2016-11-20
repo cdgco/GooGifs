@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Google GIFs : Search In Style">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-    <title>Google GIFs</title>
+    <title>Google GIFs by cdgco</title>
   </head>
 
   <body>
+    <header>
+      <div class="inner">
+        <h1>Google GIFs</h1>
+        <h2>Search In Style</h2>
+        <a href="https://github.com/cdgco/GooGifs" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cdgco/GooGifs">View on GitHub</a>
-
-          <h1 id="project_title">Google GIFs</h1>
-          <h2 id="project_tagline">Search In Style</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cdgco/GooGifs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cdgco/GooGifs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
 <a id="googifs" class="anchor" href="#googifs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GooGifs</h1>
 
 <p>Google Gifs is a simple custom Google page generator, Powered by Giphy, Google &amp; ShareThis, Developed by CDG Labs. GooGifs has a simple UI that allows for multiple options to be altered when generating pages. All code is provided free of charge with no limit to alteration and republishing.</p>
@@ -39,45 +36,55 @@
 <h2>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
 
-<p>To view a live demo of Google GIFs, please visit <a href="https://test.cdgtech.one/git">CDG Labs</a>.</p>
+<p>To view a live demo of Google GIFs, please visit <a href="https://test.cdgtech.one/">CDG Labs</a>.</p>
 
 <h2>
 <a id="installation-instructions" class="anchor" href="#installation-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation Instructions</h2>
 
-<p>To install Google GIFs on your own server or website, simply download and extract GooGifs from Github, or run the command "git clone <a href="https://github.com/cdgco/GooGifs.git">https://github.com/cdgco/GooGifs.git</a>" on your server's web directory.</p>
+<p>There are 3 methods of installing Google GIFs:</p>
 
-<p>If you would like to allow short link &amp; sharing options, simply sign up for an account at <a href="http://tools.sharethis.com/signin">ShareThis</a> and paste your publisher key in the file named "publisher-key.php".</p>
+<ol>
+<li><p><a href="https://heroku.com/deploy"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a></p></li>
+<li><p>Simply download and extract the GooGifs file from Github to your web directory.</p></li>
+<li><p>Run the command "git clone <a href="https://github.com/cdgco/GooGifs.git">https://github.com/cdgco/GooGifs.git</a>" on your server's web directory.</p></li>
+</ol>
 
-<p>To test if your publisher key is set correctly, simply visit the "test.php" file in your browser.</p>
+<p>Visit your new website and follow steps in the confuration manager.</p>
 
 <h2>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TODO</h2>
 
 <ul>
-<li>Fully Implement Giphy API</li>
-<li>Add Random GIF Button</li>
-<li>Allow Previous / Next GIF Buttons</li>
-<li>Change Backgrounf GIF as search query is typed (make search query show GIFs with corresponding tags).</li>
+<li>Fully Implement Giphy API (Nearly Complete)</li>
+<li>Add Random / Previous / Next GIF Buttons (Nearly Complete)</li>
+<li>Change Background GIF To Related Search Query As Entered (In Progress)</li>
 <li>Implement Better Short Link &amp; Sharing System</li>
-<li>Add Mobile Support</li>
+<li>Add Mobile Support (Nearly Complete)</li>
 </ul>
 
 <h2>
 <a id="support" class="anchor" href="#support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support</h2>
 
 <p>Having trouble with Google GIFs? Feel free to contact CDG Support by emailing <a href="mailto:hello@cdgtech.one">hello@cdgtech.one</a> and if you encounter any issues, please report them at the GitHub <a href="https://github.com/cdgco/GooGifs/issues">issues tracker</a>.</p>
-      </section>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/cdgco/GooGifs/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/cdgco/GooGifs/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/cdgco/GooGifs"></a> is maintained by <a href="https://github.com/cdgco">cdgco</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Google GIFs maintained by <a href="https://github.com/cdgco">cdgco</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+  
   </body>
 </html>
