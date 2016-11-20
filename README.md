@@ -15,16 +15,12 @@ There are 3 methods of installing Google GIFs:
 
 3. Run the command "git clone https://github.com/cdgco/GooGifs.git" on your server's web directory.
 
-If you would like to allow short link & sharing options, simply sign up for an account at [ShareThis](http://tools.sharethis.com/signin) and paste your publisher key in the file named "publisher-key.php".
-
-To test if your publisher key is set correctly, simply visit the "test.php" file in your browser.
-
-Note: Publisher Keys are not allowed to be set when deployed to Heroku.
+Visit your new website and follow steps in the confuration manager.
 
 ##TODO
 
-* Fully Implement Giphy API (In Progress)
-* Add Random / Previous / Next GIF Buttons (In Progress)
+* Fully Implement Giphy API (Nearly Complete)
+* Add Random / Previous / Next GIF Buttons (Nearly Complete)
 * Change Background GIF To Related Search Query As Entered (In Progress)
 * Implement Better Short Link & Sharing System
 * Add Mobile Support (Nearly Complete)
