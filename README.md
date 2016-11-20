@@ -4,7 +4,7 @@ Google Gifs is a simple custom Google page generator, Powered by Giphy, Google &
 
 ##Demo
 
-To view a live demo of Google GIFs, please visit [CDG Labs](https://test.cdgtech.one/git).
+To view a live demo of Google GIFs, please visit [CDG Labs](https://test.cdgtech.one/).
 
 ##Installation Instructions
 There are 3 methods of installing Google GIFs:
