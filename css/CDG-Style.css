@@ -16,6 +16,7 @@ p {
 	margin: 0;
 }
 html, body {
+	cursor: url("https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png"), auto;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 100%;
 	background: #fff;

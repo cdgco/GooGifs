@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php $filename = 'config.php';
+
+if (file_exists($filename)) {} 
+else { header( 'Location: install' );}
+
+?>
 <!-- 
 
 Copyright 2016 CDG, Co. G.W.S.
@@ -49,27 +55,39 @@ Powered By Giphy & Google.com
 				<div class="form-style-7">
 					<form id="form1" method="get" name="form1">
 						<ul>
-							<li><input id="whiteCheck" name="x" type="radio" onclick="javascript:close1();" value="w"> White Google Logo</li>
-    						        <li><input id="colorCheck" name="x" onclick="javascript:close2();" type="radio" value="c"> Colored Google Logo</li>
-							<li><input id="customCheck" name="x" onclick="javascript:yesnoCheck();" type="radio" value="s"> Custom Title</li>
-							<li style="list-style: none; display: none" id="ifYes">
+							<li><input required id="whiteCheck" name="x" type="radio" onclick="javascript:yesnoCheck();" value="w"> White Google Logo</li>
+    						        <li><input id="colorCheck" name="x" onclick="javascript:yesnocheck2();" type="radio" value="c"> Colored Google Logo</li>
+
+							<li><input id="customCheck" name="x" onclick="javascript:yesnoCheck3();" type="radio" value="s"> Custom Title</li>
+							<li style="list-style: none; display: none" id="customtitle">
 									<ul>
 										<li><input id='yes' name="name" placeholder="Kyle's Google" type="text"> <span>Title</span></li>									<center><li><input id='yes' name="c" placeholder="#FFFFFF" type="color"><span>Title Color</span></li></center>
 									</ul>
 								<br>
+							</li>	
+<li style="display: none" id="gifurl">
+									<ul>
+										<input id='customno' name="bg" onclick="javascript:hidecustomurl();" type="radio"> Random Gif<br>																			
+										<input id='customyes' name="bg" onclick="javascript:customcheck();" type="radio"> Custom Gif&nbsp;
+									</ul>
+								
 							</li>
-							<li><input name="bg" placeholder="https://giphy.com/image.gif" type="url"> <span>Gif / Image Link</span></li>
+						
+<li style="display: none" id="customurl">
+									<input name="bg2" placeholder="https://giphy.com/image.gif" id="imageForm" type="url" pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)(.jpg|.jpeg|.png|.gif)" oninvalid="setCustomValidity('Must be valid URL ending in .gif, .png, or .jpg.')"
+    onchange="try{setCustomValidity('')}catch(e){}"><span>Gif / Image Link</span>
+							</li>
 							<li><input type="submit" value="Submit">
 							</li>
 						</ul></form>
 					
 				</div>
+<br><div style="height:10px;font-size:1px;">&nbsp;</div>
+				<center><img src="img/PoweredBy_Horizontal_Light-Backgrounds.gif" height="20px"></center>
+<br>
+				<div style="height:10px;font-size:1px;">&nbsp;</div>
 
-				<center><img src="img/giphy.gif" height="50px"></center>
-<br><br>
-				<div style="height:0px;font-size:1px;">&nbsp;</div>
-
-					<br>
+					
 
 					<table style="margin:0 auto;" id="footer">
 						<tr>

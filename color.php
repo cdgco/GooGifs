@@ -27,6 +27,7 @@ Powered By Giphy & Google.com
 <div class="outer">
 <div class="middle">
 <div class="inner">
+<div style="height:20px;font-size:1px;">&nbsp;</div>
 	<p style="text-align:center; display:inline-block; font-family: 'Product Sans', Arial, sans-serif;">
 		<span id="letterg">G</span>
 		<span id="lettero1">o</span>
@@ -36,31 +37,53 @@ Powered By Giphy & Google.com
 		<span id="lettere">e</span>
 	</p>
 
-        <div style="height:20px;font-size:1px;">&nbsp;</div>
+        <div style="height:15px;font-size:1px;">&nbsp;</div>
 	
-        <form action="/search" class="tsf" id="tsf" method="get" name="f" onsubmit="return q.value!=''" role="search" style="overflow:visible">
-		<input name="sclient" type="hidden" value="psy-ab">
+         <form action="/search" class="tsf" id="tsf" method="get" name="f" onsubmit="return q.value!=''" role="search" style="position:relative; top:-76px; overflow:visible">	</form>
+<form id="randomform" action="color.php" method="get"></form>
+		<input name="sclient" type="hidden" value="psy-ab" form="tsf">
 
 		<div id="searchContainer">
-			<input id="field" name="q" maxlength="2048" autocomplete="off" title="Search" type="text" value="" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="both" spellcheck="false" autofocus>
+			<input form="tsf" id="field" style="position: relative;  height:39.6px; length: 543px;" name="q" maxlength="2048" autocomplete="off" title="Search" type="text" value="" aria-label="Search" aria-haspopup="false" role="combobox" aria-autocomplete="both" spellcheck="false" autofocus>
 		</div>
-        <div style="height:5px;font-size:1px;">&nbsp;</div>
-
-		<div style="padding-top:18px">
-			<input aria-label="Google Search" class="button default" name="btnK" type="submit" value="Google Search">
-			<input aria-label="I'm Feeling Lucky" class="button default" id="gbqfbb" name="btnI" type="submit" value="I'm Feeling Lucky">
+<div style="height:25px;font-size:1px;">&nbsp;</div>
+		<div style="padding-top:18px; white-space: nowrap; display:inline; position:relative; top: 0px;">
+			<input form="tsf" aria-label="Google Search" class="button default" name="btnK" style="position:absolute; right: 20px;" type="submit" value="Google Search">
+				<div id="subform" style="white-space: nowrap; display:inline;">
+					<input title="Previous" class="button default" name="gifnumber" style="display:none; position:absolute; z-index: 4000; left: 0px;" type="submit" value="&#9664;" id="prev">
+					<input title="Random Gif" class="button default" form="randomform" name="randombg" onclick="$.backstretch("<?php include 'random-api.php'; print_r($random . '?v=' . + 1); ?>");" style="position:absolute;" type="submit" id="random" value="Random">
+ 					<input title="Next" class="button default" name="gifnumber" style="display:none;position:absolute; left: 95px;" type="submit" id="next" value="&#9658;">
+				</div>
+<div id="output"></div>
 		</div>
 
-		<input name="oq" type="hidden" value="">
-		<input name="gs_l" type="hidden" value="">
-		<input name="pbx" type="hidden" value="1">
-	</form>
+		<input name="oq" form="tsf" type="hidden" value="">
+		<input name="gs_l" form="tsf" type="hidden" value="">
+		<input name="pbx" form="tsf" type="hidden" value="1">
+
 
 </div>
 	<div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-<script>$.backstretch("<?php print_r($_GET['bg']) ?>");</script>
+<script>$.backstretch("<?php 
+
+$bg22 = $_GET['bg2'];
+
+include 'random-api.php';
+
+if (isset($_GET['randombg'])) {
+    $background = $random;    
+} 
+if (strpos($bg22, 'http') === 0) {  
+$background = $bg22;
+   }
+else{
+       $background = $random;
+       };
+print_r($background);
+
+?>");</script>
 		<span class="ctr-p" data-jiis="bp" id="body"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script></span> 
 		<script type="text/javascript">stLight.options({publisher: "<?php echo $pubkey; ?>", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> 
 		<script>var options={ "publisher": "<?php echo $pubkey; ?>", "position": "left", "ad": { "visible": false, "openDelay": 0, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "email"]}}; var st_hover_widget = new sharethis.widgets.hoverbuttons(options);</script>
@@ -68,7 +91,6 @@ Powered By Giphy & Google.com
         </div>
     </div>
 </div>
-
 	<div class="_hq _ih" id="fbar">
 		<div class="fbar">
 			<span id="fsr">

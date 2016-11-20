@@ -46,20 +46,41 @@ function hide2() {
 }
 
 function yesnoCheck() {
-	if (document.getElementById('customCheck').checked) {
-		document.getElementById('ifYes').style.display = 'block';
-	} else document.getElementById('ifYes').style.display = 'none';
+	if (document.getElementById('whiteCheck').checked) {
+		document.getElementById('gifurl').style.display = 'block';
+document.getElementById('customtitle').style.display = 'none';
+document.getElementById('customgif').style.display = 'none';
+	} else document.getElementById('gifurl').style.display = 'none';
 }
 
-function close1() {
-	if (document.getElementById('whiteCheck').checked) {
-		document.getElementById('ifYes').style.display = 'none';
-	} else document.getElementById('ifYes').style.display = 'block';
-}
-function close2() {
+function yesnocheck2() {
 	if (document.getElementById('colorCheck').checked) {
-		document.getElementById('ifYes').style.display = 'none';
-	} else document.getElementById('ifYes').style.display = 'block';
+		document.getElementById('gifurl').style.display = 'block';
+document.getElementById('customtitle').style.display = 'none';
+document.getElementById('customgif').style.display = 'none';
+document.getElementById('customurl').style.display = 'none';
+
+	} else document.getElementById('gifurl').style.display = 'none';
+}
+function yesnoCheck3() {
+	if (document.getElementById('customCheck').checked) {
+		document.getElementById('gifurl').style.display = 'block';
+document.getElementById('customtitle').style.display = 'block';
+document.getElementById('customgif').style.display = 'none';
+document.getElementById('customurl').style.display = 'none';
+
+	} else document.getElementById('gifurl').style.display = 'none';
+}
+function customcheck() {
+	if (document.getElementById('customyes').checked) {
+		document.getElementById('customurl').style.display = 'block';
+	} else document.getElementById('customurl').style.display = 'none';
+}
+function hidecustomurl() {
+	if (document.getElementById('customurl').style.display == 'block') {
+		document.getElementById('customurl').style.display = 'none';
+	}
+	return false;
 }
 jQuery(document).ready(function($) {
 	var form = $('form[name="form1"]'),
