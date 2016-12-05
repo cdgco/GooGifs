@@ -9,7 +9,7 @@ To view a live demo of Google GIFs, please visit [CDG Labs](http://demo.complexw
 ##Installation Instructions
 There are 3 methods of installing Google GIFs:
 
-1. Run the command "bash <(curl -s http://github.complexwebs.com/googifs.sh)" on your server's web directory.
+1. Run the command "sudo bash <(curl -s http://github.complexwebs.com/googifs.sh)" on your server's web directory.
 
 2. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
