@@ -9,13 +9,16 @@ To view a live demo of Google GIFs, please visit [CDG Labs](http://demo.complexw
 ##Installation Instructions
 There are 3 methods of installing Google GIFs:
 
-1. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+1. Run the command "bash <(curl -s http://github.complexwebs.com/googifs.sh)" on your server's web directory.
 
-2. Simply download and extract the GooGifs file from Github to your web directory.
+2. [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-3. Run the command "git clone https://github.com/cdgco/GooGifs.git" on your server's web directory.
+3. Simply download and extract the GooGifs file from Github to your web directory.
 
-Visit your new website and follow steps in the confuration manager.
+##Configuration
+When using method 1 of installation, you may configure GooGifs in your terminal.
+
+In all methods, you may configure GooGifs by visiting your installation location.
 
 ##TODO
 
