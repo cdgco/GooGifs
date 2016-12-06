@@ -1,4 +1,5 @@
 # GooGifs
+![Home Screen](/install/img1.jpg?raw=true)
 
 Google Gifs is a simple custom Google page generator, Powered by Giphy, Google & ShareThis, Developed by CDG Labs. GooGifs has a simple UI that allows for multiple options to be altered when generating pages. All code is provided free of charge with no limit to alteration and republishing.
 
