@@ -26,8 +26,11 @@ In all methods, you may configure GooGifs by visiting your installation location
 If installation test shows blank values or will not delete installation folder, please chmod the GooGifs folder to 777, complete configuration and removal of installation directory, then chmod 644.
 
 To do this in terminal, please run the following commands while inside of GooGifs folder:
+
 "sudo chmod -R 777 ."
+
 (Complete Configuration Online)
+
 "sudo chmod -R 644 ."
 
 ##TODO
