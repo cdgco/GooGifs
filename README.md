@@ -27,7 +27,7 @@ If installation test shows blank values or will not delete installation folder, 
 
 To do this in terminal, please run the following commands while inside of GooGifs folder:
 "sudo chmod -R 777 ."
-#Complete Configuration#
+(Complete Configuration Online)
 "sudo chmod -R 644 ."
 
 ##TODO
