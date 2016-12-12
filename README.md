@@ -20,7 +20,15 @@ There are 3 methods of installing Google GIFs:
 ##Configuration
 When using method 1 of installation, you may configure GooGifs in your terminal.
 
-In all methods, you may configure GooGifs by visiting your installation location.
+In all methods, you may configure GooGifs by visiting your installation location and following on-screen directions.
+
+##Troubleshooting
+If installation test shows blank values or will not delete installation folder, please chmod the GooGifs folder to 777, complete configuration and removal of installation directory, then chmod 644.
+
+To do this in terminal, please run the following commands while inside of GooGifs folder:
+"sudo chmod -R 777 ."
+#Complete Configuration#
+"sudo chmod -R 644 ."
 
 ##TODO
 
