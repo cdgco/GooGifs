@@ -43,3 +43,6 @@ To do this in terminal, please run the following commands while inside of GooGif
 
 ##Support
 Having trouble with Google GIFs? Feel free to contact CDG Support by emailing hello@cdgtech.one and if you encounter any issues, please report them at the GitHub [issues tracker](https://github.com/cdgco/GooGifs/issues).
+
+##
+![Powered By Giphy](img/PoweredBy_Horizontal_Light-Backgrounds.gif?raw=true)
